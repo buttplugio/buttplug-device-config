@@ -37,9 +37,9 @@ jobs:
       inputs:
         gitHubConnection: "release"
         repositoryName: "buttplugio/buttplug-device-config"
-        action: "edit"
+        action: "create"
         tagSource: "manual"
         tag: "v$(buildNum)"
         title: "Buttplug Device Config File Version $(buildNum)"
-        assets: "$(Build.ArtifaceStagingDirectory)/config/*"
+        assets: "$(Build.ArtifaceStagingDirectory)/*"
         
