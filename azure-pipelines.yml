@@ -24,9 +24,13 @@ jobs:
     - task: CopyFiles@2
       displayName: "Copy config files to staging"
       inputs:
-        contents: "$(System.DefaultWorkingDirectory)/**/buttplug-device-config.*"
+        contents: "$(System.DefaultWorkingDirectory)/buttplug-device-config.yml"
         targetFolder: '$(Build.ArtifactStagingDirectory)'
-        cleanTargetFolder: true
+    - task: CopyFiles@2
+      displayName: "Copy config files to staging"
+      inputs:
+        contents: "$(System.DefaultWorkingDirectory)/dist/buttplug-device-config.json"
+        targetFolder: '$(Build.ArtifactStagingDirectory)'
     - task: PublishPipelineArtifact@0
       displayName: "Publish artifacts"
       inputs:
@@ -41,5 +45,5 @@ jobs:
         tagSource: "manual"
         tag: "v$(buildNum)"
         title: "Buttplug Device Config File Version $(buildNum)"
-        assets: "$(Build.ArtifaceStagingDirectory)/*"
+        assets: "$(Build.ArtifactStagingDirectory)/*"
         
