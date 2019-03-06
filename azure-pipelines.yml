@@ -2,7 +2,7 @@ trigger:
 - master
 
 variables:
-  buildNum: $[ counter("", 1) ]
+  buildNum: $[ counter() ]
 
 jobs:
   - job: "Linux"
