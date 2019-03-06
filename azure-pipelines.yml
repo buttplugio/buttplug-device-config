@@ -18,18 +18,13 @@ jobs:
       displayName: 'Install packages'
       env: { "CI": "true" }
     - script: |
-        yarn build
+        yarn build:ci
       displayName: 'Build JSON version of device file'
       env: { "CI": "true" }
     - task: CopyFiles@2
       displayName: "Copy config files to staging"
       inputs:
-        contents: "$(System.DefaultWorkingDirectory)/buttplug-device-config.yml"
-        targetFolder: '$(Build.ArtifactStagingDirectory)'
-    - task: CopyFiles@2
-      displayName: "Copy config files to staging"
-      inputs:
-        contents: "$(System.DefaultWorkingDirectory)/dist/buttplug-device-config.json"
+        contents: "$(System.DefaultWorkingDirectory)/buttplug-device-config.*"
         targetFolder: '$(Build.ArtifactStagingDirectory)'
     - task: PublishPipelineArtifact@0
       displayName: "Publish artifacts"
