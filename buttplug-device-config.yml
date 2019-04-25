@@ -259,7 +259,8 @@ protocols:
       names:
         - Youcups
       services:
-        0000fee9-0000-1000-8000-00805f9b34fb: null
+        0000fee9-0000-1000-8000-00805f9b34fb:
+          tx: d44bc439-abfd-45a2-b575-925416129600
   cueme:
     btle:
       names:
@@ -341,6 +342,14 @@ protocols:
       services:
         0000fff0-0000-1000-8000-00805f9b34fb:
           tx: 0000fff6-0000-1000-8000-00805f9b34fb
+  prettylove:
+    btle:
+      names:
+        - Aogu BLE *
+      services:
+        0000FFE5-0000-1000-8000-00805f9b34fb:
+          tx: 0000FFE9-0000-1000-8000-00805f9b34fb
+          rx: 0000FFE2-0000-1000-8000-00805f9b34fb
   # nintendo-joycon:
   #   names:
   #     en-us: Nintendo Joycon
