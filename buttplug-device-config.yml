@@ -264,6 +264,7 @@ protocols:
       names:
         - Cougar
         - 4 Plus
+        - 4_Plus
         - 4plus
         - Bloom
         - classic
@@ -271,10 +272,18 @@ protocols:
         - Ditto
         - Gala
         - Jive
+        - Melt
+        - Moxie
         - Nova
         - NOVAV2
         - Pivot
+        - Rey # Branded Realm
+        - We-Vibe Rocketman # Rey alias
         - Rave
+        - Reina # Branded Realm
+        - imassager # Reina alias
+        - Interactive Massager # Reina alias
+        - 03 # Reina alias
         - Sync
         - Vector
         - Verge
