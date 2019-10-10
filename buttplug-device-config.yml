@@ -200,6 +200,7 @@ protocols:
           - LuWuShuang # Adel - Curved Rabbit
           - LiBo # Lily - Double ended mini wand
           - QingTing # Lucy - Dragonfly egg
+          - Shuidi # ELLE2 - Shock Egg
         services:
           # Write Service
           00006000-0000-1000-8000-00805f9b34fb:
