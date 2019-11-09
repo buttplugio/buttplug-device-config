@@ -485,7 +485,15 @@ protocols:
         - Massage Demo
       services:
         0000ff00-0000-1000-8000-00805f9b34fb:
-          tx: 0000ff00-0000-1000-8000-00805f9b34fb
+          tx: 0000ff01-0000-1000-8000-00805f9b34fb
+  lovehoney-desire:
+    btle:
+      names:
+        - PROSTATE VIBE
+        - KNICKER VIBE
+      services:
+        0000ff00-0000-1000-8000-00805f9b34fb:
+          tx: 0000ff01-0000-1000-8000-00805f9b34fb
   # nintendo-joycon:
   #   hid:
   #     vendor-id: 0x057e
