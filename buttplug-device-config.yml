@@ -469,6 +469,16 @@ protocols:
       services:
         0000aaa0-0000-1000-8000-00805f9b34fb:
           tx: 0000aaa1-0000-1000-8000-00805f9b34fb
+  lelo-f1s:
+    btle:
+      names:
+        - F1s
+      services:
+        0000fff0-0000-1000-8000-00805f9b34fb:
+          tx: 0000fff1-0000-1000-8000-00805f9b34fb
+          # There are a LOT of sensor characteristics
+          # I figure we'll add them as support for those sensor
+          # types is added to Buttplug
   # nintendo-joycon:
   #   hid:
   #     vendor-id: 0x057e
