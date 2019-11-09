@@ -220,11 +220,14 @@ protocols:
         - Smart Mini Vibe*
         - Flamingo
         - Eidolon
-        - Smart Bean
-        - Magic Cell
+        - Smart Bean # Magic Kegel Twins/Master/Master V2
+        - Magic Cell # Candy/Dante
         - Magic Wand
         - Fugu
-        - Krush
+        - Krush # Lovelife Krush
+        - Lipstick # Awaken
+        - Sword # Equinox
+        - Curve # Solstice
       services:
         78667579-7b48-43db-b8c5-7928a6b0a335:
           tx: 78667579-a914-49a4-8333-aa3c0cd8fedc
