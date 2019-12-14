@@ -1,10 +1,4 @@
 {
-  "connection-info-types": [
-    "btle",
-    "serial",
-    "usb",
-    "hid"
-  ],
   "protocols": {
     "lovense": {
       "btle": {
@@ -64,7 +58,7 @@
           }
         }
       },
-      "device-configs": [
+      "configs": [
         {
           "identifier": [
             "B"
@@ -153,7 +147,7 @@
       "configs": [
         {
           "identifier": [
-            null
+            "Xbox Gamepad"
           ],
           "name": {
             "en-us": "XBox (XInput) Compatible Gamepad"
@@ -201,13 +195,17 @@
       },
       "configs": [
         {
-          "identifier": "Launch",
+          "identifier": [
+            "Launch"
+          ],
           "name": {
             "en-us": "Fleshlight Launch"
           }
         },
         {
-          "identifier": "Onyx2",
+          "identifier": [
+            "Onyx2"
+          ],
           "name": {
             "en-us": "Kiiroo Onyx 2"
           }

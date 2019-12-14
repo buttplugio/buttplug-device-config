@@ -277,7 +277,10 @@
             "configs": {
               "$ref": "#/components/configs-definition"
             }
-          }
+          },
+          "required": [
+            "configs"
+          ]
         }
       },
       "additionalProperties": false
