@@ -58,7 +58,7 @@
           }
         }
       },
-      "configs": [
+      "configurations": [
         {
           "identifier": [
             "B"
@@ -144,7 +144,7 @@
       ]
     },
     "xinput": {
-      "configs": [
+      "configurations": [
         {
           "identifier": [
             "Xbox Gamepad"
@@ -193,7 +193,7 @@
           }
         }
       },
-      "configs": [
+      "configurations": [
         {
           "identifier": [
             "Launch"

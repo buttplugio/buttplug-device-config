@@ -172,7 +172,7 @@ protocols:
           FeatureCount: 1
           StepCount:
             - 20
-    configs:
+    configurations:
       # For lovense, our identifiers are the letters returned from the
       # DeviceInfo query sent on initialization.
       - identifier:
@@ -226,11 +226,11 @@ protocols:
     #
     # TODO Maybe just start calling this "gamepad"? Maybe add "VR
     # Controller" too?
-    configs:
+    configurations:
       - identifier:
           # We already know what this is as its communication manager
           # is specifically built for it, so there's nothing to
-          # identify. Just make this a string.
+          # identify. Just make this a string that we'll ignore.
           - Xbox Gamepad
         name:
           en-us: XBox (XInput) Compatible Gamepad
@@ -264,7 +264,7 @@ protocols:
           FeatureCount: 1
           StepCount:
             - 100
-    configs:
+    configurations:
       - identifier:
           - Launch
         name:

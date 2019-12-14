@@ -211,7 +211,7 @@
         "messages"
       ]
     },
-    "configs-definition": {
+    "configurations-definition": {
       "type": "array",
       "items": {
         "type": "object",
@@ -274,12 +274,12 @@
             "defaults": {
               "$ref": "#/components/defaults-definition"
             },
-            "configs": {
-              "$ref": "#/components/configs-definition"
+            "configurations": {
+              "$ref": "#/components/configurations-definition"
             }
           },
           "required": [
-            "configs"
+            "configurations"
           ]
         }
       },
