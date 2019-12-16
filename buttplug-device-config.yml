@@ -278,36 +278,181 @@ protocols:
           - Onyx2
         name:
           en-us: Kiiroo Onyx 2
-  # libo:
-  #     btle:
-  #       names:
-  #         - PiPiJing # Whale/ELLE - Shock Egg
-  #         - XiaoLu # Lottie - Rabbit
-  #         - LuXiaoHan # LuLu - Egg
-  #         - SuoYinQiu # Karen - Kegel
-  #         - BaiHu # LaLa - Suction Rabbit
-  #         - MonsterPub # Sistalk MonsterPub (all 6?)
-  #         - Gugudai # Carlos - Suction Chicken
-  #         - ShaYu # Shark - Enflating Rabbit
-  #         - Yuyi # Lina - Leaf
-  #         - LuWuShuang # Adel - Curved Rabbit
-  #         - LiBo # Lily - Double ended mini wand
-  #         - QingTing # Lucy - Dragonfly egg
-  #         - Shuidi # ELLE2 - Shock Egg
-  #         - Huohu # Sexy Fox - Rabbit
-  #       services:
-  #         # Write Service
-  #         00006000-0000-1000-8000-00805f9b34fb:
-  #           tx: 00006001-0000-1000-8000-00805f9b34fb
-  #           txmode: 00006002-0000-1000-8000-00805f9b34fb
-  #         # Read Service (battery)
-  #         # 00006050-0000-1000-8000-00805f9b34fb:
-  #         #   battery: 00006051-0000-1000-8000-00805f9b34fb
-  #         # 00006070-0000-1000-8000-00805f9b34fb:
-  #         #   battery: 00006071-0000-1000-8000-00805f9b34fb
-  #         # Read Service (pressue)
-  #         # 00006050-0000-1000-8000-00805f9b34fb:
-  #         #   battery: 00006051-0000-1000-8000-00805f9b34fb
+  libo:
+      btle:
+        names:
+          - PiPiJing # Whale/ELLE - Shock Egg
+          - XiaoLu # Lottie - Rabbit
+          - LuXiaoHan # LuLu - Egg
+          - SuoYinQiu # Karen - Kegel
+          - BaiHu # LaLa - Suction Rabbit
+          - MonsterPub # Sistalk MonsterPub (all 6?)
+          - Gugudai # Carlos - Suction Chicken
+          - ShaYu # Shark - Enflating Rabbit
+          - Yuyi # Lina - Leaf
+          - LuWuShuang # Adel - Curved Rabbit
+          - LiBo # Lily - Double ended mini wand
+          - QingTing # Lucy - Dragonfly egg
+          - Shuidi # ELLE2 - Shock Egg
+          - Huohu # Lara/Sexy Fox - Rabbit
+        services:
+          # Write Service
+          00006000-0000-1000-8000-00805f9b34fb:
+            tx: 00006001-0000-1000-8000-00805f9b34fb
+            txmode: 00006002-0000-1000-8000-00805f9b34fb
+          # Read Service (battery)
+          #00006050-0000-1000-8000-00805f9b34fb:
+          #  rxbattery: 00006051-0000-1000-8000-00805f9b34fb
+          # unknown
+          #00006070-0000-1000-8000-00805f9b34fb:
+          #  battery: 00006071-0000-1000-8000-00805f9b34fb
+          # Read Service (pressure)
+          00006050-0000-1000-8000-00805f9b34fb:
+            rxpressure: 00006051-0000-1000-8000-00805f9b34fb
+      defaults:
+        messages:
+          BatteryLevelCmd: {}
+          RSSILevelCmd: {}
+        extra:
+          LiboMode: Default
+      configurations:
+        # Shock vibes
+        - identifier:
+            - PiPiJing
+          name:
+            en-us: LiBo Elle
+          messages:
+            VibrateCmd:
+              FeatureCount: 2
+              StepCount:
+                - 3  # Vibe
+                - 14 # Estim
+          extra:
+            LiboMode: Elle
+        - identifier:
+            - Shuidi
+          name:
+            en-us: Libo Elle 2
+          messages:
+            VibrateCmd:
+              FeatureCount: 2
+              StepCount:
+                - 3  # Vibe
+                - 14 # Estim
+          extra:
+            LiboMode: Elle
+        # Shark
+        - identifier:
+            - ShaYu
+          name:
+            en-us: Libo Shark
+          messages:
+            VibrateCmd:
+              FeatureCount: 2
+              StepCount:
+                - 3
+                - 3
+          extra:
+            LiboMode: Shark
+        # Single vibes
+        - identifier:
+            - XiaoLu
+          name:
+            en-us: Libo Lottie
+          messages:
+            VibrateCmd:
+              FeatureCount: 1
+              StepCount:
+                - 100
+        - identifier:
+            - MonsterPub
+          name:
+            en-us: Sistalk MonsterPub
+          messages:
+            VibrateCmd:
+              FeatureCount: 1
+              StepCount:
+                - 100
+        - identifier:
+            - LuXiaoHan
+          name:
+            en-us: Libo LuLu
+          messages:
+            VibrateCmd:
+              FeatureCount: 1
+              StepCount:
+                - 100
+        - identifier:
+            - Yuyi
+          name:
+            en-us: Libo Lina
+          messages:
+            VibrateCmd:
+              FeatureCount: 1
+              StepCount:
+                - 100
+        - identifier:
+            - LuWuShuang
+          name:
+            en-us: Libo Adel
+          messages:
+            VibrateCmd:
+              FeatureCount: 1
+              StepCount:
+                - 100
+        - identifier:
+            - LiBo
+          name:
+            en-us: Libo Lily
+          messages:
+            VibrateCmd:
+              FeatureCount: 1
+              StepCount:
+                - 100
+        - identifier:
+            - QingTing
+          name:
+            en-us: Libo Lucy
+          messages:
+            VibrateCmd:
+              FeatureCount: 1
+              StepCount:
+                - 100
+        - identifier:
+            - Huohu
+          name:
+            en-us: Libo Lara
+          messages:
+            VibrateCmd:
+              FeatureCount: 1
+              StepCount:
+                - 100
+        # Suction Vibes
+        - identifier:
+            - BaiHu
+          name:
+            en-us: Libo LaLa
+          messages:
+            VibrateCmd:
+              FeatureCount: 2
+              StepCount:
+                - 100
+                - 3
+        - identifier:
+            - Gugudai
+          name:
+            en-us: Libo Carlos
+          messages:
+            VibrateCmd:
+              FeatureCount: 2
+              StepCount:
+                - 100
+                - 3
+        # Kegel Sensors
+        - identifier:
+            - SuoYinQiu
+          name:
+            en-us: Libo Karen
   # magic-motion:
   #   btle:
   #     names:

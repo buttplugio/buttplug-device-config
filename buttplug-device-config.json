@@ -217,6 +217,276 @@
           }
         }
       ]
+    },
+    "libo": {
+      "btle": {
+        "names": [
+          "PiPiJing",
+          "XiaoLu",
+          "LuXiaoHan",
+          "SuoYinQiu",
+          "BaiHu",
+          "MonsterPub",
+          "Gugudai",
+          "ShaYu",
+          "Yuyi",
+          "LuWuShuang",
+          "LiBo",
+          "QingTing",
+          "Shuidi",
+          "Huohu"
+        ],
+        "services": {
+          "00006000-0000-1000-8000-00805f9b34fb": {
+            "tx": "00006001-0000-1000-8000-00805f9b34fb",
+            "txmode": "00006002-0000-1000-8000-00805f9b34fb"
+          },
+          "00006050-0000-1000-8000-00805f9b34fb": {
+            "rxpressure": "00006051-0000-1000-8000-00805f9b34fb"
+          }
+        }
+      },
+      "defaults": {
+        "messages": {
+          "BatteryLevelCmd": {},
+          "RSSILevelCmd": {}
+        },
+        "extra": {
+          "LiboMode": "Default"
+        }
+      },
+      "configurations": [
+        {
+          "identifier": [
+            "PiPiJing"
+          ],
+          "name": {
+            "en-us": "LiBo Elle"
+          },
+          "messages": {
+            "VibrateCmd": {
+              "FeatureCount": 2,
+              "StepCount": [
+                3,
+                14
+              ]
+            }
+          },
+          "extra": {
+            "LiboMode": "Elle"
+          }
+        },
+        {
+          "identifier": [
+            "Shuidi"
+          ],
+          "name": {
+            "en-us": "Libo Elle 2"
+          },
+          "messages": {
+            "VibrateCmd": {
+              "FeatureCount": 2,
+              "StepCount": [
+                3,
+                14
+              ]
+            }
+          },
+          "extra": {
+            "LiboMode": "Elle"
+          }
+        },
+        {
+          "identifier": [
+            "ShaYu"
+          ],
+          "name": {
+            "en-us": "Libo Shark"
+          },
+          "messages": {
+            "VibrateCmd": {
+              "FeatureCount": 2,
+              "StepCount": [
+                3,
+                3
+              ]
+            }
+          },
+          "extra": {
+            "LiboMode": "Shark"
+          }
+        },
+        {
+          "identifier": [
+            "XiaoLu"
+          ],
+          "name": {
+            "en-us": "Libo Lottie"
+          },
+          "messages": {
+            "VibrateCmd": {
+              "FeatureCount": 1,
+              "StepCount": [
+                100
+              ]
+            }
+          }
+        },
+        {
+          "identifier": [
+            "MonsterPub"
+          ],
+          "name": {
+            "en-us": "Sistalk MonsterPub"
+          },
+          "messages": {
+            "VibrateCmd": {
+              "FeatureCount": 1,
+              "StepCount": [
+                100
+              ]
+            }
+          }
+        },
+        {
+          "identifier": [
+            "LuXiaoHan"
+          ],
+          "name": {
+            "en-us": "Libo LuLu"
+          },
+          "messages": {
+            "VibrateCmd": {
+              "FeatureCount": 1,
+              "StepCount": [
+                100
+              ]
+            }
+          }
+        },
+        {
+          "identifier": [
+            "Yuyi"
+          ],
+          "name": {
+            "en-us": "Libo Lina"
+          },
+          "messages": {
+            "VibrateCmd": {
+              "FeatureCount": 1,
+              "StepCount": [
+                100
+              ]
+            }
+          }
+        },
+        {
+          "identifier": [
+            "LuWuShuang"
+          ],
+          "name": {
+            "en-us": "Libo Adel"
+          },
+          "messages": {
+            "VibrateCmd": {
+              "FeatureCount": 1,
+              "StepCount": [
+                100
+              ]
+            }
+          }
+        },
+        {
+          "identifier": [
+            "LiBo"
+          ],
+          "name": {
+            "en-us": "Libo Lily"
+          },
+          "messages": {
+            "VibrateCmd": {
+              "FeatureCount": 1,
+              "StepCount": [
+                100
+              ]
+            }
+          }
+        },
+        {
+          "identifier": [
+            "QingTing"
+          ],
+          "name": {
+            "en-us": "Libo Lucy"
+          },
+          "messages": {
+            "VibrateCmd": {
+              "FeatureCount": 1,
+              "StepCount": [
+                100
+              ]
+            }
+          }
+        },
+        {
+          "identifier": [
+            "Huohu"
+          ],
+          "name": {
+            "en-us": "Libo Lara"
+          },
+          "messages": {
+            "VibrateCmd": {
+              "FeatureCount": 1,
+              "StepCount": [
+                100
+              ]
+            }
+          }
+        },
+        {
+          "identifier": [
+            "BaiHu"
+          ],
+          "name": {
+            "en-us": "Libo LaLa"
+          },
+          "messages": {
+            "VibrateCmd": {
+              "FeatureCount": 2,
+              "StepCount": [
+                100,
+                3
+              ]
+            }
+          }
+        },
+        {
+          "identifier": [
+            "Gugudai"
+          ],
+          "name": {
+            "en-us": "Libo Carlos"
+          },
+          "messages": {
+            "VibrateCmd": {
+              "FeatureCount": 2,
+              "StepCount": [
+                100,
+                3
+              ]
+            }
+          }
+        },
+        {
+          "identifier": [
+            "SuoYinQiu"
+          ],
+          "name": {
+            "en-us": "Libo Karen"
+          }
+        }
+      ]
     }
   }
 }

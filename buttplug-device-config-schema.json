@@ -200,6 +200,11 @@
       },
       "additionalProperties": false
     },
+    "ExtraContext": {
+      "description": "A container for additional details required for specific protocol implementations.",
+      "type": "object",
+      "additionalProperties": true
+    },
     "name-field": {
       "type": "object",
       "patternProperties": {
@@ -246,6 +251,9 @@
           },
           "messages": {
             "$ref": "#/components/DeviceMessagesEx"
+          },
+          "extra": {
+            "$ref": "#/components/ExtraContext"
           }
         },
         "required": [
