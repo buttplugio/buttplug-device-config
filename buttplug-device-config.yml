@@ -1064,7 +1064,11 @@ protocols:
           rx: 49535343-1e4d-4bd9-ba61-23c647249616
           tx: 49535343-8841-43f4-a8d4-ecbe34729bb3
           command: 49535343-aca3-481c-91ec-d85e28a60318
-          cmd2: 49535343-6daa-4d02-abf6-19569aca69fe
+          # Not actually used at the moment, should be renamed to
+          # command2 if we ever use it (which, it's Kiiroo v1, so we
+          # probably won't.)
+          #
+          # cmd2: 49535343-6daa-4d02-abf6-19569aca69fe
     defaults:
       messages:
         BatteryLevelCmd: {}
