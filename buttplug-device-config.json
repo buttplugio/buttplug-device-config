@@ -396,7 +396,8 @@
     "motorbunny": {
       "btle": {
         "names": [
-          "MB Controller"
+          "MB Controller",
+          "MB LINK 201"
         ],
         "services": {
           "0000fff0-0000-1000-8000-00805f9b34fb": {
