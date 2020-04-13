@@ -446,6 +446,7 @@ protocols:
     btle:
       names:
         - MB Controller
+        - MB LINK 201
       services:
         0000fff0-0000-1000-8000-00805f9b34fb:
           tx: 0000fff6-0000-1000-8000-00805f9b34fb
