@@ -517,6 +517,14 @@ protocols:
         00000a60-0000-1000-8000-00805f9b34fb:
           tx: 00000a66-0000-1000-8000-00805f9b34fb
           rx: 00000a67-0000-1000-8000-00805f9b34fb
+  lovenuts:
+    btle:
+      names:
+        - Love_Nuts
+      services:
+        0000fff0-0000-1000-8000-00805f9b34fb:
+          tx: 0000fff1-0000-1000-8000-00805f9b34fb
+          rx: 0000fff1-0000-1000-8000-00805f9b34fb
   # nintendo-joycon:
   #   hid:
   #     vendor-id: 0x057e
