@@ -278,6 +278,7 @@ protocols:
         - Bloom
         - classic
         - Classic
+        - Chorus
         - Ditto
         - Gala
         - Jive
@@ -293,9 +294,11 @@ protocols:
         - imassager # Reina alias
         - Interactive Massager # Reina alias
         - "03" # Reina alias
+        - Skeena # WeVibe 6? Possible alias for Chrous
         - Sync
         - Vector
         - Verge
+        - Wand
         - Wish
       services:
         f000bb03-0451-4000-b000-000000000000:
