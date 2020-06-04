@@ -163,6 +163,7 @@
           "Bloom",
           "classic",
           "Classic",
+          "Chorus",
           "Ditto",
           "Gala",
           "Jive",
@@ -178,9 +179,11 @@
           "imassager",
           "Interactive Massager",
           "03",
+          "Skeena",
           "Sync",
           "Vector",
           "Verge",
+          "Wand",
           "Wish"
         ],
         "services": {
@@ -238,7 +241,7 @@
         "names": [
           "Onyx2.1",
           "Titan1.1",
-          "Oynx+"
+          "Onyx+"
         ],
         "services": {
           "00001900-0000-1000-8000-00805f9b34fb": {
