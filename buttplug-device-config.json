@@ -51,6 +51,10 @@
           "42300001-0023-4bd4-bbd5-a6920e4c5653": {
             "tx": "42300002-0023-4bd4-bbd5-a6920e4c5653",
             "rx": "42300003-0023-4bd4-bbd5-a6920e4c5653"
+          },
+          "43300001-0023-4bd4-bbd5-a6920e4c5653": {
+            "tx": "43300002-0023-4bd4-bbd5-a6920e4c5653",
+            "rx": "43300003-0023-4bd4-bbd5-a6920e4c5653"
           }
         }
       }
@@ -163,6 +167,7 @@
           "Bloom",
           "classic",
           "Classic",
+          "Chorus",
           "Ditto",
           "Gala",
           "Jive",
@@ -178,9 +183,11 @@
           "imassager",
           "Interactive Massager",
           "03",
+          "Skeena",
           "Sync",
           "Vector",
           "Verge",
+          "Wand",
           "Wish"
         ],
         "services": {

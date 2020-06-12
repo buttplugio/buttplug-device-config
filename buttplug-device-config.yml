@@ -177,6 +177,9 @@ protocols:
         42300001-0023-4bd4-bbd5-a6920e4c5653: # Max 2
           tx: 42300002-0023-4bd4-bbd5-a6920e4c5653
           rx: 42300003-0023-4bd4-bbd5-a6920e4c5653
+        43300001-0023-4bd4-bbd5-a6920e4c5653:
+          tx: 43300002-0023-4bd4-bbd5-a6920e4c5653
+          rx: 43300003-0023-4bd4-bbd5-a6920e4c5653
   xinput:
     # This will actually be ANY gamepad that supports XInput. XInput
     # is its own connector type, so we don't have any special
@@ -278,6 +281,7 @@ protocols:
         - Bloom
         - classic
         - Classic
+        - Chorus
         - Ditto
         - Gala
         - Jive
@@ -293,9 +297,11 @@ protocols:
         - imassager # Reina alias
         - Interactive Massager # Reina alias
         - "03" # Reina alias
+        - Skeena # WeVibe 6? Possible alias for Chrous
         - Sync
         - Vector
         - Verge
+        - Wand
         - Wish
       services:
         f000bb03-0451-4000-b000-000000000000:
