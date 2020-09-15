@@ -350,7 +350,8 @@
           "LuWuShuang",
           "LiBo",
           "QingTing",
-          "Huohu"
+          "Huohu",
+          "Yuyi"
         ],
         "services": {
           "00006000-0000-1000-8000-00805f9b34fb": {
@@ -434,6 +435,14 @@
           ],
           "name": {
             "en-us": "Libo Lara"
+          }
+        },
+        {
+          "identifier": [
+            "Yuyi"
+          ],
+          "name": {
+            "en-us": "Libo Feather"
           }
         },
         {
@@ -829,13 +838,11 @@
           "4_Plus",
           "4plus",
           "Bloom",
-          "Chrous",
           "classic",
           "Classic",
           "Ditto",
           "Gala",
           "Jive",
-          "Melt",
           "Nova",
           "NOVAV2",
           "Pivot",
@@ -843,7 +850,6 @@
           "Skeena",
           "Sync",
           "Verge",
-          "Wand",
           "Wish"
         ],
         "services": {
@@ -892,14 +898,6 @@
         },
         {
           "identifier": [
-            "Melt"
-          ],
-          "name": {
-            "en-us": "WeVibe Melt"
-          }
-        },
-        {
-          "identifier": [
             "Pivot"
           ],
           "name": {
@@ -924,26 +922,10 @@
         },
         {
           "identifier": [
-            "Chorus"
-          ],
-          "name": {
-            "en-us": "WeVibe Chorus"
-          }
-        },
-        {
-          "identifier": [
             "Skeena"
           ],
           "name": {
             "en-us": "WeVibe Skeena"
-          }
-        },
-        {
-          "identifier": [
-            "Wand"
-          ],
-          "name": {
-            "en-us": "WeVibe Wand"
           }
         },
         {
@@ -1033,8 +1015,11 @@
     "wevibe-8bit": {
       "btle": {
         "names": [
+          "Chorus",
+          "Melt",
           "Moxie",
-          "Vector"
+          "Vector",
+          "Wand"
         ],
         "services": {
           "f000bb03-0451-4000-b000-000000000000": {
@@ -1058,6 +1043,39 @@
       "configurations": [
         {
           "identifier": [
+            "Chorus"
+          ],
+          "name": {
+            "en-us": "WeVibe Chorus"
+          },
+          "messages": {
+            "VibrateCmd": {
+              "FeatureCount": 2,
+              "StepCount": [
+                27,
+                27
+              ]
+            }
+          }
+        },
+        {
+          "identifier": [
+            "Melt"
+          ],
+          "name": {
+            "en-us": "WeVibe Melt"
+          },
+          "messages": {
+            "VibrateCmd": {
+              "FeatureCount": 1,
+              "StepCount": [
+                22
+              ]
+            }
+          }
+        },
+        {
+          "identifier": [
             "Moxie"
           ],
           "name": {
@@ -1077,6 +1095,22 @@
               "StepCount": [
                 12,
                 12
+              ]
+            }
+          }
+        },
+        {
+          "identifier": [
+            "Wand"
+          ],
+          "name": {
+            "en-us": "WeVibe Wand"
+          },
+          "messages": {
+            "VibrateCmd": {
+              "FeatureCount": 1,
+              "StepCount": [
+                22
               ]
             }
           }
