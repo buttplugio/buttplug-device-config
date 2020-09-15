@@ -168,7 +168,7 @@ protocols:
           rx: 42300003-0023-4bd4-bbd5-a6920e4c5653
         43300001-0023-4bd4-bbd5-a6920e4c5653: # New Nora
           tx: 43300002-0023-4bd4-bbd5-a6920e4c5653
-          rx: 43300003-0023-4bd4-bbd5-a6920e4c5653          
+          rx: 43300003-0023-4bd4-bbd5-a6920e4c5653
     defaults:
       messages:
         VibrateCmd:
@@ -371,6 +371,7 @@ protocols:
           - LiBo # Lily - Double ended mini wand
           - QingTing # Lucy - Dragonfly egg
           - Huohu # Lara/Sexy Fox - Rabbit
+          - Yuyi # Feather
         services:
           # Write Service
           00006000-0000-1000-8000-00805f9b34fb:
@@ -417,6 +418,10 @@ protocols:
             - Huohu
           name:
             en-us: Libo Lara
+        - identifier:
+            - Yuyi
+          name:
+            en-us: Libo Feather
         # Suction Vibes
         - identifier:
             - BaiHu
@@ -658,13 +663,11 @@ protocols:
         - 4_Plus # 4 Plus alias
         - 4plus # 4 Plus alias
         - Bloom
-        - Chrous
         - classic # 4 Plus alias
         - Classic # 4 Plus alias
         - Ditto
         - Gala
         - Jive
-        - Melt
         - Nova
         - NOVAV2
         - Pivot
@@ -672,7 +675,6 @@ protocols:
         - Skeena
         - Sync
         - Verge
-        - Wand
         - Wish
       services:
         f000bb03-0451-4000-b000-000000000000:
@@ -701,10 +703,6 @@ protocols:
         name:
           en-us: WeVibe Jive
       - identifier:
-          - Melt
-        name:
-          en-us: WeVibe Melt
-      - identifier:
           - Pivot
         name:
           en-us: WeVibe Pivot
@@ -717,17 +715,9 @@ protocols:
         name:
           en-us: WeVibe Verge
       - identifier:
-          - Chorus
-        name:
-          en-us: WeVibe Chorus
-      - identifier:
           - Skeena
         name:
           en-us: WeVibe Skeena
-      - identifier:
-          - Wand
-        name:
-          en-us: WeVibe Wand
       - identifier:
           - Wish
         name:
@@ -782,8 +772,11 @@ protocols:
   wevibe-8bit:
     btle:
       names:
+        - Chorus
+        - Melt
         - Moxie
         - Vector
+        - Wand
       services:
         f000bb03-0451-4000-b000-000000000000:
           tx: f000c000-0451-4000-b000-000000000000
@@ -798,6 +791,25 @@ protocols:
             - 12
     configurations:
       - identifier:
+          - Chorus
+        name:
+          en-us: WeVibe Chorus
+        messages:
+          VibrateCmd:
+            FeatureCount: 2
+            StepCount:
+              - 27
+              - 27
+      - identifier:
+          - Melt
+        name:
+          en-us: WeVibe Melt
+        messages:
+          VibrateCmd:
+            FeatureCount: 1
+            StepCount:
+              - 22
+      - identifier:
           - Moxie
         name:
           en-us: WeVibe Moxie
@@ -811,6 +823,15 @@ protocols:
             StepCount:
               - 12
               - 12
+      - identifier:
+          - Wand
+        name:
+          en-us: WeVibe Wand
+        messages:
+          VibrateCmd:
+            FeatureCount: 1
+            StepCount:
+              - 22
   wevibe-legacy:
     btle:
       names:
