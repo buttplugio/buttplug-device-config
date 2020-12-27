@@ -1,3 +1,7 @@
+# DEPRECATED AND ARCHIVED
+
+Buttplug device configuration files now live in the [buttplug-rs repo](https://github.com/buttplugio/buttplug-rs). This repo is no longer used and will be archived.
+
 # Buttplug Device Configuration File
 
 [![Patreon donate button](https://img.shields.io/badge/patreon-donate-yellow.svg)](https://www.patreon.com/qdot)
